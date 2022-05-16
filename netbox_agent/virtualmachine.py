@@ -19,6 +19,7 @@ def is_vm(dmi):
        'RHEV Hypervisor' in system[0]['Product Name'] or \
        'QEMU' in system[0]['Manufacturer'] or \
        'RDO' in system[0]['Manufacturer'] or \
+       'Microsoft Corporation' in system[0]['Manufacturer'] or \
        'VirtualBox' in bios[0]['Version'] or \
        'VMware' in system[0]['Manufacturer']:
         return True
